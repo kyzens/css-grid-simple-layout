@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 50%;
+    margin: 5% auto;
+    overflow: hidden;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
+    height: 80vh;
+    margin: 0;
+}
+
+.container > div:nth-child(1) {
+    grid-column: 1/4;
+    background-color: gold;
+}
+.container > div:nth-child(2) {
+    grid-column: 4;
+    background-color: pink;
+}
+.container > div:nth-child(3) {
+    grid-column: 5;
+    background-color: pink;
+}
+.container > div:nth-child(4) {
+    grid-column: 6;
+    background-color: pink;
+}
+
+
+.container > div:nth-child(5) {
+    grid-column: 1/6;
+    grid-row: 2;
+    background-color: powderblue;
+}
+.container > div:nth-child(6) {
+    grid-column: 1;
+    grid-row: 3/5;
+    background-color: lightgreen;
+}
+.container > div:nth-child(7) {
+    grid-column: 2/6;
+    grid-row: 3;
+    background-color: silver;
+}
+.container > div:nth-child(8) {
+    grid-column: 2/6;
+    grid-row: 4;
+    background-color: yellow;
+}
+.container > div:nth-child(9) {
+    grid-column: 1/7;
+    grid-row: 5;
+    background-color: rosybrown;
+}
+
+.container > div:nth-child(10) {
+    background-color: orange;
+}
+.container > div:nth-child(11) {
+    background-color: green;
+}
+.container > div:nth-child(12) {
+    background-color: mediumorchid;
+}
